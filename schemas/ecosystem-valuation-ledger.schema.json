@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://soilgrower.com/schemas/ecosystem-valuation-ledger.schema.json",
+  "title": "Public Land & Urban Forest Ecosystem Valuation Ledger",
+  "description": "Open JSON Schema for quantifying ecosystem service externalities (watershed hydrology, forest carbon stocks, soil stability, and municipal mitigation) in resource policy and site preservation plans.",
+  "type": "object",
+  "required": [
+    "site_id",
+    "jurisdiction_or_agency",
+    "evaluation_date",
+    "canopy_metrics",
+    "ecosystem_services_annual"
+  ],
+  "properties": {
+    "site_id": { "type": "string" },
+    "jurisdiction_or_agency": {
+      "type": "string",
+      "description": "Federal land management unit (USFS, BLM) or municipal tree ordinance jurisdiction."
+    },
+    "evaluation_date": { "type": "string", "format": "date" },
+    "canopy_metrics": {
+      "type": "object",
+      "required": ["tree_count", "total_dbh_inches", "canopy_cover_sqft"],
+      "properties": {
+        "tree_count": { "type": "integer", "minimum": 0 },
+        "total_dbh_inches": { "type": "number", "minimum": 0 },
+        "canopy_cover_sqft": { "type": "number", "minimum": 0 },
+        "crz_union_area_sqft": { "type": "number", "minimum": 0 }
+      }
+    },
+    "ecosystem_services_annual": {
+      "type": "object",
+      "properties": {
+        "carbon_storage_lbs": {
+          "type": "number",
+          "description": "Total above-ground and below-ground dry biomass carbon stock (Nowak 1994 / Cairns et al. 1997)."
+        },
+        "carbon_sequestration_lbs_yr": { "type": "number" },
+        "stormwater_intercepted_gallons_yr": {
+          "type": "number",
+          "description": "Annual avoided runoff from canopy interception and rhizosphere infiltration (Xiao et al. 2000)."
+        },
+        "air_pollutants_removed_lbs_yr": {
+          "type": "number",
+          "description": "Dry deposition removal of O3, NO2, SO2, PM2.5, and CO (Nowak et al. 2006)."
+        },
+        "cooling_energy_savings_kwh_yr": {
+          "type": "number",
+          "description": "Building shade cooling energy reduction (McPherson & Simpson 1999)."
+        },
+        "ctla_structural_value_usd": {
+          "type": "number",
+          "description": "Compensatory structural valuation based on trunk area, species, condition, and location factors."
+        }
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 **Author:** George Steward | MNR Candidate (Forests and Climate Change), Oregon State University  
 **Credentials:** ISA Certified Arborist (`TX-362025A`) | B.S. Environmental Science  
-**Practice:** [Soil Grower](https://soilgrower.com) | [Spatial Field Showcase](https://soilgrower.com/showcase/)
+**Practice:** [Soil Grower](https://soilgrower.com)
 
 ---
 

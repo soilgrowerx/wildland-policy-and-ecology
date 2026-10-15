@@ -33,3 +33,10 @@ However, traditional marketability balance sheets omit unpriced public trust lia
 
 ### 2. Heat, Drought, and Edaphic Resilience Across Working Landscapes
 Across five years of field observation in Arizona and Central Texas, sustained thermal extremes and vapor pressure deficit (`VPD`) expose a consistent vulnerability: above-ground canopy survival is governed by below-ground pore architecture, mycorrhizal symbiosis, and hydraulic conductivity. Urban and wildland-urban interface (`WUI`) management must shift from reactive canopy removals to proactive subterranean soil and watershed stewardship.
+
+---
+
+## Licensing
+
+This repository and all scholarship, analyses, schemas, and protocols contained within are licensed under Creative Commons Attribution 4.0 International ([`LICENSE`](LICENSE)).
+
